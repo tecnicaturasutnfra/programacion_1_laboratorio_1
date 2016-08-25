@@ -3,9 +3,9 @@
 #include <time.h>
 
 /**
- * \brief Solicita un número al usuario y devuelve el resultado
+ * \brief Solicita un nÃºmero al usuario y devuelve el resultado
  * \param mensaje Es el mensaje a ser mostrado
- * \return El número ingresado por el usuario
+ * \return El nÃºmero ingresado por el usuario
  *
  */
 float getFloat(char mensaje[])
@@ -17,9 +17,9 @@ float getFloat(char mensaje[])
 }
 
 /**
- * \brief Solicita un número al usuario y devuelve el resultado
+ * \brief Solicita un nÃºmero al usuario y devuelve el resultado
  * \param mensaje Es el mensaje a ser mostrado
- * \return El número ingresado por el usuario
+ * \return El nÃºmero ingresado por el usuario
  *
  */
 int getInt(char mensaje[])
@@ -42,16 +42,17 @@ char getChar(char mensaje[])
     printf("%s",mensaje);
     fflush(stdin); // Win
     fpurge(stdin); //Linux y OSx
+    //__fpurge(stdin); //Para compatibildad con Linux
     scanf("%c",&auxiliar);
     return auxiliar;
 }
 
 /**
- * \brief Genera un número aleatorio
- * \param desde Número aleatorio mínimo
- * \param hasta Número aleatorio máximo
- * \param iniciar Indica si se trata del primer número solicitado 1 indica que si
- * \return retorna el número aleatorio generado
+ * \brief Genera un nÃºmero aleatorio
+ * \param desde NÃºmero aleatorio mÃ­nimo
+ * \param hasta NÃºmero aleatorio mÃ¡ximo
+ * \param iniciar Indica si se trata del primer nÃºmero solicitado 1 indica que si
+ * \return retorna el nÃºmero aleatorio generado
  *
  */
 char getNumeroAleatorio(int desde , int hasta, int iniciar)
